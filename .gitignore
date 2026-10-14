@@ -1,0 +1,25 @@
+# Зависимости
+node_modules/
+
+# ISO образы
+*.iso
+
+# Логи
+*.log
+npm-debug.log*
+
+# Переменные окружения
+.env
+.env.local
+
+# Сборка
+dist/
+build/
+
+# Системное
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
