@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TDWA02-01 — тест API через NGINX</title>
+    <link rel="stylesheet" href="TDWA02-01.css" />
+  </head>
+  <body>
+    <h1>TDWA02-01</h1>
+    <p class="subtitle">Проверка /api/Save-JSON через NGINX (порт 20000)</p>
+
+    <div class="panel">
+      <label
+        >op:
+        <select id="op">
+          <option value="add">add</option>
+          <option value="sub" selected>sub</option>
+          <option value="mul">mul</option>
+          <option value="div">div</option>
+        </select>
+      </label>
+      <label>x: <input id="x" type="number" value="3" /></label>
+      <label>y: <input id="y" type="number" value="5" /></label>
+    </div>
+
+    <div class="buttons">
+      <button data-method="GET">GET</button>
+      <button data-method="POST">POST</button>
+      <button data-method="PUT">PUT</button>
+      <button data-method="DELETE">DELETE</button>
+    </div>
+
+    <h2>Ответ сервера</h2>
+    <div id="status" class="status">—</div>
+    <pre id="result" class="result"></pre>
+
+    <script src="TDWA02-01.js"></script>
+  </body>
+</html>
