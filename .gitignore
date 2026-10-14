@@ -3,6 +3,7 @@ node_modules/
 
 # ISO образы
 *.iso
+*.exe
 
 # Логи
 *.log
