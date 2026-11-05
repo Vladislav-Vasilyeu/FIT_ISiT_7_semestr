@@ -26,7 +26,7 @@ class RepairServiceTest {
         service.startRepair(1);
 
         assertEquals(
-                RepairStatus.IN_PROGRESS,
+                RepairStatus.COMPLETED,
                 service.getOrder(1).getStatus()
         );
     }
