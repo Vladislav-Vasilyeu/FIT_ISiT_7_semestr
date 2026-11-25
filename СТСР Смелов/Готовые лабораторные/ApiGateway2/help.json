@@ -1,0 +1,5 @@
+"LoadBalancerOptions": {
+  "Type": "CookieStickySessions",
+  "Key": ".MyStickySession",
+  "Expiry": 120000
+}

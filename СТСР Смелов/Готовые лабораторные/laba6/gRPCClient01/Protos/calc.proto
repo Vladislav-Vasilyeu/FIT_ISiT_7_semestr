@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+option csharp_namespace = "CalcGrpc";
+
+package calc;
+
+// ---------- Сообщения ----------
+
+// Запрос с двумя операндами
+message CalcRequest {
+  double x = 1;
+  double y = 2;
+}
+
+// Ответ с результатом
+message CalcReply {
+  double result = 1;
+}
+
+// Запрос для факториала
+message FactRequest {
+  int32 x = 1;
+}
+
+// Ответ для факториала
+message FactReply {
+  int32 result = 1;
+}
+
+// ---------- Сервис ----------
+
+service Calculator {
+  rpc Sum  (CalcRequest)  returns (CalcReply);
+  rpc Sub  (CalcRequest)  returns (CalcReply);
+  rpc Mul  (CalcRequest)  returns (CalcReply);
+  rpc Div  (CalcRequest)  returns (CalcReply);
+  rpc Fact (FactRequest)  returns (FactReply);
+}
